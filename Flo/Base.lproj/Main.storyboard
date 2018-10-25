@@ -80,19 +80,28 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90f-qZ-Pdf">
-                                        <rect key="frame" x="29.5" y="85.5" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90f-qZ-Pdf" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Qec-bG-aJ8"/>
+                                            <constraint firstAttribute="height" constant="250" id="bBA-zy-fX2"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.5263671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="90f-qZ-Pdf" firstAttribute="centerY" secondItem="DrP-yK-IS5" secondAttribute="centerY" id="Odb-le-4Fy"/>
                                     <constraint firstAttribute="height" constant="300" id="ZVM-KI-yGO"/>
                                     <constraint firstAttribute="width" constant="300" id="gYT-Np-40f"/>
+                                    <constraint firstItem="90f-qZ-Pdf" firstAttribute="centerX" secondItem="DrP-yK-IS5" secondAttribute="centerX" id="hsQ-K0-C5G"/>
                                     <constraint firstItem="ARv-tA-ZQY" firstAttribute="centerY" secondItem="DrP-yK-IS5" secondAttribute="centerY" id="tFg-aV-hPd"/>
                                     <constraint firstItem="ARv-tA-ZQY" firstAttribute="centerX" secondItem="DrP-yK-IS5" secondAttribute="centerX" id="wfT-fm-uZC"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="290-EZ-Iwc" appends="YES" id="nJB-do-pZ5"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,11 +116,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="DrP-yK-IS5" id="Nvt-Ma-lKO"/>
                         <outlet property="counterLabel" destination="ZIi-Uv-MiB" id="lXu-He-gVn"/>
                         <outlet property="counterView" destination="ARv-tA-ZQY" id="Ryo-zG-AIW"/>
+                        <outlet property="graphView" destination="90f-qZ-Pdf" id="dfs-nY-2oP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="290-EZ-Iwc">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="cjT-YI-pE5"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="201" y="134"/>
         </scene>
