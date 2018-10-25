@@ -15,6 +15,7 @@
 		7515CC48217A514100DA1F12 /* FloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CC47217A514100DA1F12 /* FloTests.swift */; };
 		7515CC53217A569200DA1F12 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CC52217A569200DA1F12 /* PushButton.swift */; };
 		7515CC55217A62C600DA1F12 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CC54217A62C600DA1F12 /* CounterView.swift */; };
+		7515CC57217A70AC00DA1F12 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7515CC56217A70AC00DA1F12 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7515CC49217A514100DA1F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7515CC52217A569200DA1F12 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		7515CC54217A62C600DA1F12 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		7515CC56217A70AC00DA1F12 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7515CC3E217A514100DA1F12 /* Info.plist */,
 				7515CC52217A569200DA1F12 /* PushButton.swift */,
 				7515CC54217A62C600DA1F12 /* CounterView.swift */,
+				7515CC56217A70AC00DA1F12 /* GraphView.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7515CC57217A70AC00DA1F12 /* GraphView.swift in Sources */,
 				7515CC35217A514000DA1F12 /* ViewController.swift in Sources */,
 				7515CC33217A514000DA1F12 /* AppDelegate.swift in Sources */,
 				7515CC53217A569200DA1F12 /* PushButton.swift in Sources */,

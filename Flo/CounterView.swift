@@ -30,27 +30,18 @@ import UIKit
             }
         }
     }
-
     
     override func draw(_ rect: CGRect) {
-        // 1
         let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
-        
-        // 2
         let radius: CGFloat = max(bounds.width, bounds.height)
-        
-        // 3
         let startAngle: CGFloat = 3 * .pi / 4
         let endAngle: CGFloat = .pi / 4
-        
-        // 4
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius/2 - Constants.arcWidth/2,
                                 startAngle: startAngle,
                                 endAngle: endAngle,
                                 clockwise: true)
-        
-        // 5
+
         path.lineWidth = Constants.arcWidth
         counterColor.setStroke()
         path.stroke()
