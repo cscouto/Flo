@@ -76,8 +76,6 @@ import UIKit
         outlineColor.setStroke()
         outlinePath.lineWidth = Constants.lineWidth
         outlinePath.stroke()
-
-
     }
 }
 
