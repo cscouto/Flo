@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UvT-vo-PeV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="qPr-v0-xxx">
+            <objects>
+                <viewController id="UvT-vo-PeV" customClass="SecondViewController" customModule="Flo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aMk-gB-aJv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoB-xQ-ojT">
+                                <rect key="frame" x="137.5" y="33" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bih-mF-9Jo"/>
+                                    <constraint firstAttribute="width" constant="100" id="pZ0-Cg-HiL"/>
+                                </constraints>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="UvT-vo-PeV" eventType="touchUpInside" id="WRX-7D-6uK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IoB-xQ-ojT" firstAttribute="top" secondItem="Cc7-2P-a2t" secondAttribute="top" constant="13" id="Tc9-zR-1mT"/>
+                            <constraint firstItem="IoB-xQ-ojT" firstAttribute="centerX" secondItem="aMk-gB-aJv" secondAttribute="centerX" id="oWO-X6-rlJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cc7-2P-a2t"/>
+                    </view>
+                    <connections>
+                        <segue destination="WEY-FM-91B" kind="unwind" identifier="unwindView" unwindAction="unwindToVC1WithSegue:" id="vD1-ps-ssw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4n-pC-qto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WEY-FM-91B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1255" y="164"/>
+        </scene>
+    </scenes>
+</document>

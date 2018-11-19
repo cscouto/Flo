@@ -58,6 +58,8 @@ class ViewController: UIViewController {
         isGraphShowing = !isGraphShowing
     }
     
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
+    
     
     func setupGraphDisplay() {
         
